@@ -2,6 +2,10 @@ import streamlit as st
 from PyPDF2 import PdfWriter
 from io import BytesIO
 
+
+# Show the Streamlit app in the browser
+st.set_page_config(layout="wide")
+
 st.title('PDF Merger')
 
 uploaded_files = st.file_uploader("Choose PDF files", accept_multiple_files=True, type=['pdf'])
